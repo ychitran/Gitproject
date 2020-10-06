@@ -1,0 +1,107 @@
+<?php include 'admin/database.php' ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/example.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keyword" content="Garden Music, âm nhạc, tự học âm nhạc">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+	<title> Garden Music - Dạy âm nhạc trực tuyến</title>
+</head>
+<body>
+	<div class="container">
+				<div class="logo">
+					
+						<div class="col-md-2"><img src="images\logo.jpg" alt="logo" class="center-block"></div>	
+						<div class="col-md-8"><center><h1>Garden Music - Dạy âm nhạc trực tuyến</h1></center></div>
+						<div class="col-md-2" style="padding-left: 66px">
+					   		<!-- Small modal -->
+						 <div class="col-md-12">
+							<button type="button" style="width: 96px" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm-1">Đăng ký</button>
+							<div class="modal fade bs-example-modal-sm-1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+							  <div class="modal-dialog modal-sm" role="document">
+							    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title" id="myModalLabel" style="color: #111">Đăng ký</h4>
+								      </div> <!--End.modal-header-->
+								      <div class="modal-body">
+								      	<form method="POST">
+											  <div class="form-group">
+											    <label style="color: #1f568B">Tên đăng nhập</label>
+											    <input type="text" class="form-control" id="exampleInputLogin1" name="username">
+											  </div>
+											  <div class="form-group">
+											    <label style="color: #1f568B">Mật khẩu</label>
+											    <input type="Password" class="form-control" id="exampleInputPassword1" name="password">
+											  </div>
+											  <div class="form-group">
+											    <label style="color: #1f568B">Xác nhận mật khẩu</label>
+											    <input type="Password" class="form-control" id="exampleInputRep_Password1" name="rep_password">
+											  </div>
+											  <div class="form-group">
+											    <label style="color: #1f568B">Date of birth</label>
+											    <input type="Day" class="form-control" id="exampleInputDob1" placeholder="2000-01-01" name="dob">
+											  </div>
+											  <div class="form-group">
+											    <label style="color: #1f568B">Email</label>
+											    <input type="Email" class="form-control" id="exampleEmail1" placeholder="gardenmusic_passion@gmail.com" name="email">
+											  </div>
+											  <div class="form-group">
+											    <label style="color: #1f568B">Địa chỉ</label>
+											    <input type="text" class="form-control" id="exampleAddress1" placeholder="210 Nguyễn Cư Trinh, thành phố Huế" name="address">
+											  </div>
+											  <div class="modal-footer">
+								       		 <input type="submit" class="btn btn-primary" value="Đăng kí">
+								       		 <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
+								      		  </div>
+								</form>
+										  </div> <!-- End. Modal-body-->
+							 </div> <!-- End. Modal-content-->
+						   </div> <!-- End. Modal-dialog modal-sm -->
+						 </div> <!-- End. Modal fade bs-example-modal-sm -->
+						</div> <!-- End. col-md-1 -->
+						 <!-- Small modal -->
+						<div class="col-md-12">
+							<button type="button" style="width: 96px" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Đăng nhập</button>
+							<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+							  <div class="modal-dialog modal-sm" role="document">
+							    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <h4 class="modal-title" id="myModalLabel" style="color: #111">Đăng nhập</h4>
+								      </div> <!--End.modal-header -->
+								      <div class="modal-body">
+								      	<form method="POST">
+											  <div class="form-group">
+											    <label style="color: #1f568B">Tên đăng nhập</label>
+											    <input type="text" class="form-control" id="exampleInputLogin2" name="username">
+											  </div>
+											  <div class="form-group">
+											    <label style="color: #1f568B">Mật khẩu</label>
+											    <input type="Password" class="form-control" id="exampleInputPassword2" name="password">
+											  </div>
+											  <div class="modal-footer">
+								       		 <input type="submit" class="btn btn-primary" value="Đăng nhập">
+								       		 <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
+								      		  </div>
+									  </form>
+									</div> <!--End. Modal-body 2 -->
+								</div> <!--End. Modal-content 2 -->
+							</div> <!-- End. Modal-dialog modal-sm -->
+						 </div> <!-- End. Modal fade bs-example-modal-sm -->
+						</div> <!-- End. col-md-12 -->
+					   		</div>
+						</div> <!--End.col-md-3-->
+ 							</div><!--End Logo-->
+					   			</div>  <!-- End. Container -->
+				 					</div> <!--End. Header-->
